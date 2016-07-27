@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+'''
+Class#2
+2. Create an IP address converter (dotted decimal to binary):
+    A. Prompt a user for an IP address in dotted decimal format.
+    B. Convert this IP address to binary and display the binary result on the
+screen (a binary string for each octet).
+    Example output:
+    first_octet    second_octet     third_octet    fourth_octet
+         0b1010       0b1011000          0b1010         0b10011
+'''
+
+
+ip = raw_input("please enter your ip:")
+print ip
+
+s = ip.split(".")
+
+a = bin(int(s[0]))
+b = bin(int(s[1]))
+c = bin(int(s[2]))
+d = bin(int(s[3]))
+
+print (" first_octet   " + "second_octet   " + "third_octet   " + "fourth_octet")
+print (  "%s    %s      %s     %s "  )%(a,b,c,d)
