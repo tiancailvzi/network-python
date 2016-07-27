@@ -1,0 +1,21 @@
+ip  = raw_input("please enter the ip address:")
+print ip 
+
+octet = ip.split(".")
+print octet
+
+octet1 = octet[:3]
+print octet1 
+
+octet1.append('0')
+
+
+j = ".".join(octet1)
+print j
+
+first = octet1[0]
+bin = bin(int(first))
+hex1 = hex(int(first))
+
+print ("NETWORK_NUMBER" + "   " + "FIRST_OCTET_BINARY" + "   " "FIRST_OCTET_HEX" )
+print("%s" + "           " + "%s" + "             " + "%s") % (j,bin,hex1)
